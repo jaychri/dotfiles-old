@@ -132,3 +132,9 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+# wrappers
+
+if [ -f ~/.bash_wrappers ]; then
+    . ~/.bash_wrappers
+fi
