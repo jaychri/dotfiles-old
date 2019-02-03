@@ -23,3 +23,11 @@ whatsgoingon() {
         popd >/dev/null
     done
 }
+
+wttr()
+{
+    # change 55344 to your default location
+    local request="wttr.in/${1-55344}"
+    [ "$COLUMNS" -lt 125 ] && request+='?n'
+    curl -H "Accept-Language: ${LANG%_*}" --compressed "$request"
+}
