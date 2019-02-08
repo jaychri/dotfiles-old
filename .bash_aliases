@@ -1,6 +1,15 @@
 # -- Git
 alias glog='git log --oneline --graph --color --all --decorate'
 
+alias gco='git checkout'
+alias gl='git pull --prune'
+alias gca='git commit -a'
+alias gp='git push origin HEAD'
+# alias www='cd ~/Dropbox/Repos/www-gitlab-com/source'
+# alias s='www;subl .;gco master;gl'
+## after editing, you can do a GCA to commit all of the changes followed by a GP to push them to the remote branch
+
+
 # alias yams='find . -type f -name "*.yml*" | sed "s|\./||g" | egrep -v "(\.kitchen/|\[warning\]|\.molecule/)" | xargs yamllint -f parsable'
 
 # -- avoid adding commands to history by having leading space
