@@ -8,3 +8,5 @@ cd dotfiles
 then run install.sh
 ```
 
+TODO:
+- [ ] refactor x
