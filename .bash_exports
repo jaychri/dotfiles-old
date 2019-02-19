@@ -8,13 +8,17 @@ export LESSOPEN='|~/.lessfilter %s'
 # eval "$(plenv init -)"
 
 # golang
-export GOPATH=~/gocode
-export PATH="$GOPATH/bin:${PATH}:/usr/local/go/bin"
+if [ -d ~/gocode ]; then
+   export GOPATH=~/gocode
+   export PATH="$GOPATH/bin:${PATH}:/usr/local/go/bin"
+fi
 
 # ruby rbenv
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
-export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
+if [ -x /usr/bin/rbenv ]; then
+   export PATH="$HOME/.rbenv/bin:$PATH"
+   eval "$(rbenv init -)"
+   export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
+fi
 
 export EDITOR=/usr/bin/vim
 
