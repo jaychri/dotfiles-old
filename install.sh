@@ -24,3 +24,6 @@ ln -s dotfiles/.tmux.conf ~/
 rm           ~/.dircolors
 ln -s dotfiles/.dircolors ~/
 
+rm           ~/.bash_logout
+ln -s dotfiles/.bash_logout ~/
+
