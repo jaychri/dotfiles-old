@@ -14,7 +14,7 @@ alias gp='git push origin HEAD'
 
 # -- avoid adding commands to history by having leading space
 # --   This does not appear to be working
-alias ls=' ls'
+# alias ls=' ls'
 
 # alias ....='cd ../../../../'
 # alias ...='cd ../../../'
